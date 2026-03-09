@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #00274C;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00274C;
+    padding: 3rem 1.25rem 1.25rem;
+    text-align: left;
+    border-bottom: 0.25rem solid #FFCB05;
+}
+header h1,
+header h2,
+.site-name {
+    color: #FFFFFF;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+    max-height: 18.75rem;
+    object-fit: cover;
+    margin-top: 1.5rem;
+}
+
+.branding{
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.9375rem;
+}
+
+/* https://www.ischool.berkeley.edu/careers/students/mentorship I referenced the Berkeley SI website for header styling */
+
+header img {
+    width: 5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.site-name{
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+main {
+    padding: 0.9375rem;
+}
+
+.last-updated{
+    background-color: #00274C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.9375rem;
+    margin: 1.25rem 0;
+    font-weight: bold;
+}
+.last-updated h2{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* https://www.ischool.berkeley.edu/careers/students/mentorship I referenced the Berkeley SI website for last updated box */
+
+.quick-links{
+    text-align: center;
+}
+
+.quick-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links li{
+    margin: 3rem 0;
+}
+
+.quick-links a{
+    color: #00274C;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.quick-links a:hover,
+.quick-links a:focus{
+    color: #00274C;
+}
+
+/* https://www.cc.gatech.edu/ I referenced the GeorgiaTech SI website for link styling inspiration */
+
+
+footer {
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 2rem 1.25rem;
+    border-bottom: 0.75rem solid #FFCB05;
+    text-align: center;
+}
+
+footer a{
+    color: #FFCB05;
+}
+
+.footer-grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-brand img{
+    width: 5rem;
+    margin: 0 auto 1rem auto;
+}
+
+.footer-info p{
+    margin-bottom: 1rem;
+}
+
+.footer-links a{
+    font-weight: bold;
+}
+
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-links a{
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+}
+
+.social-links a:hover,
+.social-links a:focus{
+    background-color: #FFD84D;
+}
+/* https://www.cc.gatech.edu/ I referenced the GeorgiaTech SI website for grid footer inspiration as well as some style choices from UMSI */
+
+.signup{
+    padding: 1.25rem 0.9375rem;
+    background-color: #FFFFFF;
+}
+
+.signup h2{
+    color: #00274C;
+    margin-bottom: 0.625rem;
+}
+
+.signup h3{
+  margin-top: 0.5rem;
+}
+
+.signup p{
+    color: #00274C;
+    font-weight: bold;
+}
+
+.signup-form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.625rem;
+    margin-top: 0.9375rem;
+}
+
+.signup-form input{
+    grid-column: 1 / 4;
+    padding: 0.9375rem;
+    border: none;
+    background-color: #E5E5E5;
+    font-size: 1rem;
+}
+
+.signup-form button{
+    grid-column: 4 / 5;
+    background-color: #00274C;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    padding: 0.9375rem;
+}
+
+.visually-hidden{
+    position: absolute;
+    left: -9999px;
+}
+
+/* https://www.ischool.berkeley.edu/careers/students/mentorship I referenced the Berkeley SI website for signup form */
+
+h1{
+    font-size: 1.75rem;
+    line-height: 1.2;
+    padding: 0.9375rem 0;
+}
+
+h2{
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+h3{
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: transparent;
+    padding: 1 rem 0;
+    text-align: left;
+    margin-bottom: 1.5 rem;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+}
+
+nav li{
+    margin-bottom: 0;
+}
+
+nav a{
+    background-color: #FFCB05;
+    color: #00274C;
+    display: block;
+    font-weight: bold;
+    padding: 0.625rem 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+main a{
+   color: #00274C;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.resume-review a{
+    color: #FFCB05;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main a:hover,
+main a:focus{
+    text-decoration: underline;
+}
+
+/* https://www.ischool.berkeley.edu/careers/students/mentorship I referenced the Berkeley SI website for main a */
+nav a:hover,
+nav a:focus {
+    outline: 0.1875rem dashed #FFCB05;
+    border-color: #FFCB05;
+}
+
+.active{
+  background-color: #FFFFFF;
+  color: #00274C;
+  border: 0.1875rem solid #FFCB05;
+}
+
+.skip a {
+     position: absolute;
+     top: -4.0625rem;
+     left: 0;
+     background: #FFCB05;
+     color: #00274c;
+}
+
+.skip a:focus {
+     top: 0.625rem;
+}
+
+:focus{
+  border: 0.1875rem dashed #FFCB05;
+}
+
+section{
+    margin-bottom: 1.25rem;
+}
+
+main section{
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    border-top: 0.25rem solid #FFCB05;
+    border-bottom: 0.25rem solid #FFCB05;
+}
+main section h2{
+    margin-bottom: 1.25rem;
+}
+main section p{
+    margin-bottom: 1rem;
+}
+main section img{
+    margin-bottom: 1rem;
+}
+
+/* https://www.ischool.berkeley.edu/careers/students/mentorship I referenced the Berkeley SI website for main sections */
+
+.resume-review{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 1.5rem;
+}
+
+.resume-review h2{
+    grid-column: 1 / -1;
+}
+
+.resume-review p{
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.resume-review img{
+    grid-column: 1 / -1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul{
+  padding-left: 1.25rem;
+}
+
+ol{
+  padding-left: 2rem;
+}
+
+li{
+  margin-bottom: 0.75rem;
+}
